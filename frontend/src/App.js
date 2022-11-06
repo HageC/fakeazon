@@ -1,5 +1,12 @@
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <header>
+        <a href="/">Fakeazon</a>
+      </header>
+      <main>products</main>
+    </div>
+  );
 }
 
 export default App;

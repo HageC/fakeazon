@@ -6,3 +6,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+header {
+  background-color: #131a22;
+  padding: 1rem;
+}
+
+header a {
+  color: #ffff;
+  font-weight: bold;
+  text-decoration: none;
+}
