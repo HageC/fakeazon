@@ -1,11 +1,21 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
 function App() {
   return (
-    <div>
-      <header>
-        <a href="/">Fakeazon</a>
-      </header>
-      <main>products</main>
-    </div>
+    <BrowserRouter>
+      <div>
+        <header>
+          <Link to="/">Fakeazon</Link>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/product/:link" element={<ProductPage />} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
