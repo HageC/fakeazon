@@ -1,7 +1,8 @@
 import React, { useEffect, useReducer } from "react";
 import LoadingSpinner from "../components/LoadingSpinner";
-import { Link } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 import axios from "axios";
+import Product from "../components/Product";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -44,20 +45,13 @@ const HomePage = () => {
         ) : state.error ? (
           <h1>{state.error}</h1>
         ) : (
-          state.products.map((product) => (
-            <div className="product" key={product.link}>
-              <Link to={`/product/${product.link}`}>
-                <img src={product.image} alt={product.name} />
-              </Link>
-              <div className="product-info">
-                <Link to={`/product/${product.link}`}>
-                  <p>{product.name}</p>
-                </Link>
-                <p className="product-price">${product.price}</p>
-                <button>Add product to cart</button>
-              </div>
-            </div>
-          ))
+          <Row>
+            {state.products.map((product) => (
+              <Col key={product.link} sm={6} md={4} lg={3} className="mt-3">
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
         )}
       </div>
     </div>

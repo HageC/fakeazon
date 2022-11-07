@@ -1,0 +1,23 @@
+{
+  "name": "fakeazon",
+  "version": "1.0.0",
+  "description": "Full stack e commerce application based off amazon.\r (Currently underdevelopment)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others-on-fail \"npm --prefix backend start\" \" npm --prefix frontend start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HageC/fakeazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HageC/fakeazon/issues"
+  },
+  "homepage": "https://github.com/HageC/fakeazon#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
