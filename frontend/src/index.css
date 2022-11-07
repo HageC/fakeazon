@@ -7,19 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #131a22;
-  padding: 1rem;
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
+  flex: 1;
   padding: 1rem;
-}
-
-header a {
-  color: #ffff;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .products {
@@ -44,4 +40,10 @@ header a {
 
 .product-price {
   font-weight: bold;
+}
+
+footer {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 1rem;
 }
