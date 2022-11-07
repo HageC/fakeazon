@@ -47,3 +47,21 @@ footer {
   margin: 0 auto;
   padding: 1rem;
 }
+
+.rating span {
+  color: #b7dd29;
+}
+
+.num-reviews {
+  color: #007185 !important;
+  margin-left: 4px;
+}
+
+.btn-warning {
+  background-color: #b7dd29;
+  border: 1px black solid;
+}
+
+.btn-warning:hover {
+  border: 1px black solid;
+}
