@@ -7,7 +7,7 @@ const data = {
       image:
         "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c006894-6712-463e-bbf5-8a879df53de9/sportswear-club-t-shirt-DDLtRZ.png",
       price: 120,
-      stock: 10,
+      stock: 0,
       brand: "Nike",
       rating: 4.5,
       numReviews: 10,

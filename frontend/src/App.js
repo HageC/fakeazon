@@ -5,6 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { LinkContainer } from "react-router-bootstrap";
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,9 +20,9 @@ function App() {
           </Navbar>
         </header>
         <main>
-          <Container>
+          <Container className="mt-3">
             <Routes>
-              <Route path="/product/:link" element={<ProductPage />} />
+              <Route path="/products/:link" element={<ProductPage />} />
               <Route path="/" element={<HomePage />} />
             </Routes>
           </Container>

@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #111;
+  text-decoration: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -64,4 +69,24 @@ footer {
 
 .btn-warning:hover {
   border: 1px black solid;
+  background-color: #a8cc20;
+}
+
+.full-image {
+  width: 100%;
+}
+
+.product-status {
+  display: flex;
+  align-items: center;
+}
+
+.product-status .badge {
+  margin-left: 1rem;
+}
+
+.product-button {
+  width: 80%;
+  display: block;
+  margin: 1rem auto 0 auto;
 }

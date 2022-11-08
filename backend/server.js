@@ -11,4 +11,13 @@ app.get("/api/products", (req, res) => {
   res.status(200).json(data);
 });
 
+app.get("/api/products/:link", (req, res) => {
+  const { link } = req.params;
+  const product = data.products.find((x) => x.link === link);
+  if (!product) {
+    return res.status(404).send({ message: "Product does not exist." });
+  } else {
+    res.status(200).send(product);
+  }
+});
 app.listen(port, console.log(`Server is listening on port ${port}`));
