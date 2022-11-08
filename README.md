@@ -1,4 +1,4 @@
 # fakeazon
 
 Full stack e commerce application based off amazon.
-(Currently underdevelopment)
+(Currently under development)
